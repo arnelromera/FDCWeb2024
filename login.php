@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Website</h1>
+    <h1>Website Update</h1>
 <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
