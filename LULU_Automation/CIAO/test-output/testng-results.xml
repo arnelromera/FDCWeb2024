@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-29T13:26:41 SGT" name="Default suite" finished-at="2024-04-29T13:26:42 SGT" duration-ms="526">
+  <suite started-at="2024-05-02T12:14:24 PST" name="Default suite" finished-at="2024-05-02T12:14:24 PST" duration-ms="48">
     <groups>
     </groups>
-    <test started-at="2024-04-29T13:26:41 SGT" name="Default test" finished-at="2024-04-29T13:26:42 SGT" duration-ms="526">
+    <test started-at="2024-05-02T12:14:24 PST" name="Default test" finished-at="2024-05-02T12:14:24 PST" duration-ms="48">
       <class name="liveLogin">
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:liveLogin@47e2e487]" started-at="2024-04-29T13:26:42 SGT" name="testCaseData" data-provider="driveTest" finished-at="2024-04-29T13:26:42 SGT" duration-ms="0" status="SKIP">
+        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:liveLogin@4dbb42b7]" started-at="2024-05-02T12:14:24 PST" name="testCaseData" data-provider="driveTest" finished-at="2024-05-02T12:14:24 PST" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)]]>
+              <![CDATA[java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)
 at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
 at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
 at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
@@ -40,10 +40,12 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetIndex(XSSFWorkbook.java:1043)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetAt(XSSFWorkbook.java:834)
-at liveLogin.getData(liveLogin.java:27)
+Caused by: java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at liveLogin.getData(liveLogin.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

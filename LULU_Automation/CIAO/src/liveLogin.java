@@ -21,7 +21,7 @@ public class liveLogin {
 	DataFormatter format = new DataFormatter();
 	@DataProvider(name="driveTest")
 	public Object[][] getData() throws IOException {		
-		FileInputStream fis = new FileInputStream("C://Users//fdcar//Downloads//LULU_Automation//ExcelFiles//LiverLogin.xlsx");
+		FileInputStream fis = new FileInputStream("//Users//fdc-mac//Documents//LULU_Automation//LULU_Automation//ExcelFiles//LiverLogin.xlsx");
 		XSSFWorkbook workBook = new XSSFWorkbook(fis);
 		
 		XSSFSheet sheets =	workBook.getSheetAt(0);
@@ -50,7 +50,7 @@ public class liveLogin {
 		options.addArguments("--use-fake-ui-for-media-stream=10");
 		options.addArguments("--remote-allow-origins=*");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\fdcar\\Downloads\\LULU_Automation\\Chrome_Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/Chrome_Driver/chromedriver");
 		WebDriver driver = new ChromeDriver(options);
 		WebDriverWait w =new WebDriverWait(driver,Duration.ofSeconds(10));
 		
@@ -59,7 +59,7 @@ public class liveLogin {
 		System.out.println("The" + URL + " is entered`");
 		
 		// login button
-		WebElement viewerLoginButton = driver.findElement(By.cssSelector(".button_login.btn_style.btn_green-o"));
+		WebElement viewerLoginButton = driver.findElement(By.className("login"));
 		String viewerLoginButtonText = viewerLoginButton.getText();
 		viewerLoginButton.click();
 		System.out.println("The "+ viewerLoginButtonText + "button is clicked");
