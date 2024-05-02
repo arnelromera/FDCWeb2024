@@ -1,0 +1,41 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class welcome_Page {
+
+	@Test
+	public  void main() {
+		System.setProperty("webdriver.chrome.driver", "/Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/Chrome_Driver/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://dev-front.machetalk.jp/liver/");
+		System.out.println(driver.getTitle());
+		
+		
+		// Locate the image element
+        WebElement imageElement = driver.findElement(By.cssSelector("(//div[@class='brand'])[1]"));
+        
+
+        // Check if the image element exists
+        if (imageElement != null) {
+	            // Get the src attribute of the image
+	            String imageSrc = imageElement.getAttribute("src");
+	            
+	            // Check if the src attribute is not empty
+	            if (!imageSrc.isEmpty()) {
+	                System.out.println("Image is present with source: " + imageSrc);
+	            } else {
+	                System.out.println("Image src is empty");
+	            }
+	        } else {
+	            System.out.println("Image element not found");
+        }
+
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class welcome_Page {
+
+	public  void main(String[] args) {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--use-fake-ui-for-media-stream=10");
+		options.addArguments("--remote-allow-origins=*");
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
+		System.setProperty("webdriver.chrome.driver", "/Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/Chrome_Driver/chromedriver");
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("https://dev-front.machetalk.jp/liver/");
+	}
+
+}
