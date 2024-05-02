@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 29 13:26:41 SGT 2024</td>
+<td>Started on:</td><td>Thu May 02 12:14:24 PST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (526 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (48 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='liveLogin.testCaseData()'><b>testCaseData</b><br>Test class: liveLogin</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)
+<td><div><pre>java.lang.RuntimeException: java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)
 	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
@@ -103,10 +103,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetIndex(XSSFWorkbook.java:1043)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetAt(XSSFWorkbook.java:834)
-	at liveLogin.getData(liveLogin.java:27)
+Caused by: java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at liveLogin.getData(liveLogin.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,8 +117,8 @@ Caused by: java.lang.IllegalArgumentException: Sheet index (4) is out of range (
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
 	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
 	... 25 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2116511124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2116511124'><pre>java.lang.RuntimeException: java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1640296160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1640296160'><pre>java.lang.RuntimeException: java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)
 	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
@@ -143,10 +145,12 @@ Caused by: java.lang.IllegalArgumentException: Sheet index (4) is out of range (
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalArgumentException: Sheet index (4) is out of range (0..2)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetIndex(XSSFWorkbook.java:1043)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetAt(XSSFWorkbook.java:834)
-	at liveLogin.getData(liveLogin.java:27)
+Caused by: java.io.FileNotFoundException: /Users/fdc-mac/Documents/LULU_Automation/LULU_Automation/ExcelFiles/LiverLogin (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
+	at liveLogin.getData(liveLogin.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,7 +161,7 @@ Caused by: java.lang.IllegalArgumentException: Sheet index (4) is out of range (
 	... 25 more
 </pre></div></td>
 <td>0</td>
-<td>liveLogin@47e2e487</td></tr>
+<td>liveLogin@4dbb42b7</td></tr>
 </table><p>
 </body>
 </html>
